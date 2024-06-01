@@ -13,24 +13,31 @@ FREE account allows only for 500 requests/month.
 
 ## Basic Usage
 1.  To make this libraty working, you need to create an account on https://rapidapi.com/, 
-then search for** instagram scraper api** https://rapidapi.com/social-api1-instagram/api/instagram-scraper-api2
+
+then search for **instagram scraper api** https://rapidapi.com/social-api1-instagram/api/instagram-scraper-api2
+and press **Subscribe for Basic**
+
+![alt text](https://github.com/xamrex/arduino-InstagramFollowers/blob/main/pics/subscribe.png)
+
 Coppy **x-rapidapi-host**, and **x-rapidapi-key**
 
-1. Connect to Wi-Fi  
-1. Include InstaFollowers module  
-   
-   ```cpp
+![alt text](https://github.com/xamrex/arduino-InstagramFollowers/blob/main/pics/apikey.png)
+
+2. Connect to Wi-Fi  
+3. Include InstaFollowers module  
+      ```cpp
    #include <InstaFollowers.h>
    ```
-   
-1. Create a InstaFollowers object with rapidapi-host and rapidapi-key
-   
-   ```cpp
-  InstaFollowers instaStats("instagram-scraper-api2.p.rapidapi.com", "RAPID_API_KEY");
+4. Create a InstaFollowers object with rapidapi-host and rapidapi-key
+      ```cpp
+   InstaFollowers instaStats("instagram-scraper-api2.p.rapidapi.com", "RAPID_API_KEY");
    ```
-3. Now you can get Followers number given username:
    
-   ```cpp
-  int FollowersCount= instaStats.GetUserFollowersCount("arduino.cc");
-  Serial.print("Follower count:"+String(FollowersCount));
+5. Now you can get Followers number given username:
+      ```cpp
+   int FollowersCount= instaStats.GetUserFollowersCount("arduino.cc");
+   Serial.print("Follower count:"+String(FollowersCount));
    ```
+   
+## Picture
+![alt text](https://github.com/xamrex/arduino-InstagramFollowers/blob/main/pics/pic.png)
